@@ -1,10 +1,10 @@
 #lang scribble/manual
-@require[@for-label[minitt
+@require[@for-label[racket-project
                     racket/base]]
 
-@title{minitt}
-@author{dannypsnl}
+@title{racket-project}
+@author{Lîm Tsú-thuàn}
 
-@defmodule[minitt]
+@defmodule[racket-project]
 
 Package Description Here
