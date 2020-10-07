@@ -1,3 +1,1 @@
-minitt
-======
-README text here.
+# racket project
