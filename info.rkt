@@ -1,5 +1,5 @@
 #lang info
-(define collection "minitt")
+(define collection "racket-project")
 (define deps '("base"))
 (define build-deps '("scribble-lib" "racket-doc" "rackunit-lib"))
 (define scribblings '(("scribblings/racket-project.scrbl" ())))
