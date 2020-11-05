@@ -4,6 +4,5 @@
 
 ```sh
 sh ./replace.sh $your_project_name
-rm ./replace.sh
-git commit -m "rename"
+rm ./replace.sh && git add . && git commit -m "rename"
 ```
