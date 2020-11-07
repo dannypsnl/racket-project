@@ -3,6 +3,6 @@
 ### How to use
 
 ```sh
-sh ./replace.sh $your_project_name
+sh ./replace.sh $your_project_name $your_name
 rm ./replace.sh && git add . && git commit -m "rename"
 ```
