@@ -12,4 +12,4 @@ build: $(OUT_DIR)
 publish: build
 	@cd $(OUT_DIR); git add -A
 	@cd $(OUT_DIR); git commit -m "update $$(date +%Y/%m/%d-%H:%M:%S)"
-	@cd $(OUT_DIR); git push origin master
+	@cd $(OUT_DIR); git push origin gh-pages
