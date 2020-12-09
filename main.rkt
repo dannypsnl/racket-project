@@ -10,3 +10,12 @@
     [("-n" "--name") name "Who to say hello to" (set-box! who name)]
     #:args ()
     (printf "hello ~a~n" (unbox who))))
+
+(module+ test
+  (require rackunit)
+
+  (test-case
+    "Example Test")
+    (check-equal? 1 2)
+
+  (test-equal? "Shortcut Equal Test" 1 2))
