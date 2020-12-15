@@ -3,7 +3,7 @@
 (module+ main
   (require racket/cmdline)
 
-  (define who (parameter "world"))
+  (define who (make-parameter "world"))
   (command-line
     #:program "racket-project"
     #:once-each
