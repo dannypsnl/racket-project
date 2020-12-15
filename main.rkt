@@ -3,13 +3,13 @@
 (module+ main
   (require racket/cmdline)
 
-  (define who (box "world"))
+  (define who (parameter "world"))
   (command-line
     #:program "racket-project"
     #:once-each
-    [("-n" "--name") name "Who to say hello to" (set-box! who name)]
+    [("-n" "--name") name "Who to say hello to" (who name)]
     #:args ()
-    (printf "hello ~a~n" (unbox who))))
+    (printf "hello ~a~n" (who))))
 
 (module+ test
   (require rackunit)
