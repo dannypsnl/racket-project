@@ -15,7 +15,7 @@
   (require rackunit)
 
   (test-case
-    "Example Test")
-    (check-equal? 1 1)
+    "Example Test"
+    (check-equal? 1 1))
 
   (test-equal? "Shortcut Equal Test" 1 1))
