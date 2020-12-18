@@ -14,8 +14,11 @@
 (module+ test
   (require rackunit)
 
+  (define expected 1)
+  (define actual 1)
+
   (test-case
     "Example Test"
-    (check-equal? 1 1))
+    (check-equal? actual expected ))
 
-  (test-equal? "Shortcut Equal Test" 1 1))
+  (test-equal? "Shortcut Equal Test" actual expected))
