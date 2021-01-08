@@ -1,4 +1,4 @@
-SCRBL := raco scribble ++main-xref-in --redirect-main http://docs.racket-lang.org/
+SCRBL := scribble ++main-xref-in --redirect-main http://docs.racket-lang.org/
 
 gh-pages:
 	@git clone git@github.com:dannypsnl/racket-project.git gh-pages -b gh-pages
