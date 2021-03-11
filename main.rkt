@@ -19,6 +19,6 @@
 
   (test-case
     "Example Test"
-    (check-equal? actual expected ))
+    (check-equal? actual expected))
 
   (test-equal? "Shortcut Equal Test" actual expected))
