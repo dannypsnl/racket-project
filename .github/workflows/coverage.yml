@@ -35,4 +35,4 @@ jobs:
         version: '8.0'
         packages: 'cover'
     - run: raco pkg install --auto
-    - run: raco cover -f coveralls .
+    - run: raco cover -f codecov .
