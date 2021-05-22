@@ -32,4 +32,4 @@ jobs:
       - run: raco pkg install --auto --batch
       - run: |
           make test
-          raco cover -b -n dev -f codecov .
+          raco cover -b -n dev -f coveralls .
