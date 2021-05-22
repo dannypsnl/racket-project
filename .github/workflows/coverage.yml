@@ -19,7 +19,6 @@ on:
 jobs:
   coverage:
     runs-on: ubuntu-latest
-    name: Report Coverage
     environment: test-env
     env:
       COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
