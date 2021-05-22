@@ -4,9 +4,6 @@ on:
   push:
     branches:
     - '*'
-    paths:
-    - '**.rkt'
-    - '**.scrbl'
   pull_request:
     branches:
     - '*'
@@ -31,8 +28,8 @@ jobs:
           distribution: 'minimal'
           variant: 'CS'
           version: '8.1'
-          packages: 'cover, cover-coveralls'
+          packages: 'cover, cover-coveralls, cover-codecov'
       - run: raco pkg install --auto --batch
       - run: |
           make test
-          raco cover -b -n dev -f coveralls .
+          raco cover -b -n dev -f codecov .
