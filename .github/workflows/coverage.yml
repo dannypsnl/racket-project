@@ -4,6 +4,9 @@ on:
   push:
     branches:
     - '*'
+    paths:
+    - '**.rkt'
+    - '**.scrbl'
   pull_request:
     branches:
     - '*'
