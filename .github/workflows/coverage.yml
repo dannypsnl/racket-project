@@ -7,7 +7,7 @@ on:
     paths:
     - '**.rkt'
     - '**.scrbl'
-    - 'coverage.yml'
+    - '*coverage.yml'
   pull_request:
     branches:
     - '*'
