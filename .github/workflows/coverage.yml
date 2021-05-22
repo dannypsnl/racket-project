@@ -18,7 +18,6 @@ on:
 
 jobs:
   coverage:
-    needs: test
     runs-on: ubuntu-latest
     name: Report Coverage
     environment: test-env
@@ -37,4 +36,6 @@ jobs:
       - name: Install package and its dependencies
         run: raco pkg install --auto --batch
       - name: Report coverage
-        run: raco cover -b -n dev -f coveralls .
+        run: |
+          make test
+          raco cover -b -n dev -f coveralls .
