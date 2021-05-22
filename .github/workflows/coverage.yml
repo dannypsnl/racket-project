@@ -29,13 +29,14 @@ jobs:
         uses: Bogdanp/setup-racket@v1.3.1
         with:
           architecture: 'x64'
-          distribution: 'full'
+          distribution: 'minimal'
           variant: 'CS'
-          version: 'stable'
-      - name: Install package and its dependencies
-        run: raco pkg install --auto --batch
+          version: '8.1'
+      - name: Install
+        run: |
+          raco pkg install --auto cover cover-coveralls
+          raco pkg install --auto --batch
       - name: Report coverage
         run: |
-          raco pkg install --auto cover
           make test
           raco cover -b -n dev -f coveralls .
