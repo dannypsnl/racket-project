@@ -35,7 +35,7 @@ jobs:
           variant: 'CS'
           version: '8.1'
           packages: 'cover, cover-coveralls'
-      - run: raco pkg install --auto --batch
+      - run: raco pkg install --auto
       - run: |
           make test
           raco cover -b -f coveralls .
