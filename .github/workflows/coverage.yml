@@ -4,10 +4,6 @@ on:
   push:
     branches:
     - '*'
-    paths:
-    - '**.rkt'
-    - '**.scrbl'
-    - '*coverage.yml'
   pull_request:
     branches:
     - '*'
