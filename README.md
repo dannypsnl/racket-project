@@ -2,6 +2,7 @@
 
 [![Test](https://github.com/dannypsnl/racket-project/actions/workflows/test.yml/badge.svg)](https://github.com/dannypsnl/racket-project/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/dannypsnl/racket-project/branch/develop/graph/badge.svg?token=2BBJROO160)](https://codecov.io/gh/dannypsnl/racket-project)
+[![Coverage Status](https://coveralls.io/repos/github/dannypsnl/racket-project/badge.svg?branch=coverage-github-action)](https://coveralls.io/github/dannypsnl/racket-project?branch=coverage-github-action)
 
 ### How to use
 
