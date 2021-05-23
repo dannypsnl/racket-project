@@ -4,6 +4,9 @@ on:
   push:
     branches:
     - '*'
+    paths:
+    - '**.rkt'
+    - '**.scrbl'
   pull_request:
     branches:
     - '*'
@@ -19,7 +22,6 @@ jobs:
     environment: test-env
     env:
       COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
-      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
     steps:
       - uses: actions/checkout@master
       - name: Cache installed packages
@@ -35,9 +37,8 @@ jobs:
           distribution: 'minimal'
           variant: 'CS'
           version: '8.1'
-          packages: 'cover, cover-coveralls, cover-codecov'
+          packages: 'cover, cover-coveralls'
       - run: raco pkg install --auto
       - run: |
           make test
           raco cover -b -f coveralls .
-          raco cover -b -f codecov .
