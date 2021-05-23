@@ -7,6 +7,7 @@ on:
     branches:
     - '*'
     paths:
+    - '**test.yml'
     - '**.rkt'
     - '**.scrbl'
   pull_request:
