@@ -6,3 +6,6 @@
 (define pkg-desc "Description Here")
 (define version "0.0")
 (define pkg-authors '(dannypsnl))
+
+(define raco-commands
+  '(("hello" (submod racket-project/cmd main) "hello world" #f)))
