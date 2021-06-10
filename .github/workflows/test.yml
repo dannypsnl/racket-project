@@ -41,7 +41,7 @@ jobs:
         distribution: 'minimal'
         variant: ${{ matrix.racket-variant }}
         version: ${{ matrix.racket-version }}
-    - run: raco pkg install --auto
+    - run: raco pkg install --auto --skip-installed
     - run: |
         make test
         #xvfb-run -a make test
